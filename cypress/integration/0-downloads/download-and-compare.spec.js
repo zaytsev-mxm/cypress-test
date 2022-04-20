@@ -15,7 +15,7 @@ describe('download and compare files', () => {
         cy
             .readFile(downloadedFilename, 'binary', {timeout: 15000})
             .then((pdfDownloaded) => {
-                cy.fixture('dummy.pdf').then((pdfFixture) => {
+                cy.fixture('dummy.pdf', 'binary', {timeout: 15000}).then((pdfFixture) => {
 
                     // NOTE I am not sure how to compare those 2 files directly
                     // because the following comparison does not work.
