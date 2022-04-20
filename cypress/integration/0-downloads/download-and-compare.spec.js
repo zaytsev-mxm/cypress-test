@@ -22,7 +22,5 @@ describe('download and compare files', () => {
                     expect(pdfDownloaded).to.deep.equal(pdfFixture);
                 })
             });
-
-
     });
 })
