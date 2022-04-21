@@ -3,7 +3,7 @@ const path = require('path');
 
 describe('download and compare files', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000');
+        cy.visit(Cypress.env('host'));
     })
 
     it('verifies download', () => {
