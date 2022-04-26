@@ -19,6 +19,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <div className="App-column">&nbsp;</div>
+      <a href="http://localhost:3000/dummy.pdf" download data-cy="download-pdf">download pdf</a>
     </div>
   );
 }
